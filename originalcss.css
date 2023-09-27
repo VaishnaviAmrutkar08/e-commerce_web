@@ -1,0 +1,813 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:rgb(255, 255, 255) ;
+    box-shadow:0 5px 15px black(0, 0, 0, 0.06) ;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+  max-width: 100px; /* Adjust the width as needed */
+  height: auto; /* This will maintain the aspect ratio */
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:plum;
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+   
+    color:rgb(95, 103, 81);
+}
+#navbar li a.active{
+    color: aquamarine;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: pink;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+p{
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0 20px;
+}
+
+.section-p1{
+    margin: 40px 0;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(226, 217, 217);
+    background-color: rgb(78, 70, 70);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(226, 217, 217);
+    background-color:transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+body{
+    width: 100%;
+}
+
+/* Home Page */
+
+#hero {
+  background-image: url("6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+
+
+
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color:blueviolet;
+}
+
+#hero button{
+    background-image: url("button.jpg");
+    background-color: transparent;
+    color:rgb(58, 14, 58);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#hero button:hover {
+    /* Add the styles you want for the hover effect */
+    background-color: rgb(58, 14, 58);
+    color: #771919; /* Change the text color on hover */
+    /* You can add more styles like changing the background image or border */
+}
+
+/* Feature section container */
+.feature-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    
+    
+  }
+  
+  /* Feature item container */
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+  
+  /* Feature item icon */
+  .feature-item i {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Feature item title */
+  .feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+   color: rgb(199, 47, 93);
+  }
+  
+  /* Feature item description */
+  .feature-item p {
+    font-size: 16px;
+    color: #555;
+    max-width: 300px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .feature-item {
+      margin-bottom: 20px;
+    }
+  
+    .feature-item i {
+      font-size: 36px;
+    }
+  
+    .feature-item h3 {
+      font-size: 20px;
+    }
+  }
+
+  .feature-item img {
+    width: 50px; /* Adjust this value to your desired width */
+    height: 50px; /* Adjust this value to your desired height */
+    transition: transform 0.2s; /* Smooth transition effect */
+  }
+  
+  /* Hover effect: Scale the image slightly when hovered */
+  .feature-item img:hover {
+    transform: scale(1.2); /* Adjust the scaling factor to your desired hover effect */
+  }
+
+  
+h1 {
+    text-align: center;
+  }
+  
+  /* Style the "New Collection" text */
+  p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style the product container */
+  /* Style the product container */
+
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+
+/* Add this CSS to align all featured products in one row */
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+.pro {
+    width: calc(25% - 20px); /* Adjust the width of each card to fit four cards in a row */
+    background-color: #f0f0f0; /* Add background color or any other styling you want */
+    padding: 20px;
+    text-align: center;
+}
+
+.pro img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pro a {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff; /* Add background color or any other styling you want */
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pro a:hover {
+    background-color: #0056b3; /* Add background color or any other styling you want */
+}
+  
+  /* Style the product description */
+  .des {
+    margin-bottom: 10px;
+  }
+  
+  .des span {
+    color: #007bff; /* Change color for brand name */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .des h5 {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Style the star rating icons */
+  .star {
+    color: #ffc107; /* Star color */
+  }
+  
+  .star i {
+    font-size: 18px;
+  }
+  
+  /* Style the product price */
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Style the cart container */
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Style each cart item */
+  .cart-item {
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  /* Style the product image in the cart */
+  .cart-item img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Limit the height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    margin-bottom: 10px;
+  }
+  
+  /* Style the product description in the cart */
+  .cart-des {
+    margin-bottom: 10px;
+  }
+  
+  .cart-des span {
+    color: #007bff; /* Change color for brand name */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cart-des h5 {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Style the product price in the cart */
+  .cart-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("banner_discount.jpeg");
+    width: 100vw; /* Adjust the width to 100% of the viewport width */
+    height: 60vh; /* Adjust the height to 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #banner{
+    color: rgb(7, 14, 8);
+    font-size: 30px;
+    padding: 10px;
+
+  }
+
+  #banner h2 span{
+  color: rgb(15, 26, 97);
+  }
+  
+  #banner button:hover{
+    background-color: rgb(20, 97, 97);
+    color: white;
+
+  }
+
+  #sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("bg_banner2.jpg");
+    min-width: 580px; /* Adjust the width to 100% of the viewport width */
+    height: 50vh; /* Adjust the height to 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 70px; /* Add sufficient margin to the banner boxes */
+    border: 2px solid #ccc; /* Add a 2px border with a light gray color */
+    box-sizing: border-box; /* Include the border in the box's total width and height */
+    
+  }
+
+  #sm-banner .banner-box2{
+    background-image: url("bg_shirt.jpg");
+  }
+
+  #sm-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  #sm-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  #sm-banner span{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 15px;
+  }
+
+  #sm-banner .banner-box:hover button{
+    background: rgb(60, 98, 60);
+    border: 1px solid rgba(83, 94, 62, 0.684);
+
+  }
+
+  #banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+  }
+
+  #banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("bg4.jpg");
+    min-width: 30%; /* Adjust the width to 100% of the viewport width */
+    height: 30vh; /* Adjust the height to 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 20px; /* Add sufficient margin to the banner boxes */
+    border: 2px solid #ccc; /* Add a 2px border with a light gray color */
+    box-sizing: border-box; 
+    margin-bottom: 50px;
+    margin-top: 5px;
+  }
+
+  #banner3 .banner-box2{
+    background-image: url("shoes.jpg");
+
+  }
+
+  #banner3 .banner-box3{
+    background-image: url("tshirt.webp");
+
+  }
+
+  
+
+  #banner3 h2{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 22px;
+
+  }
+
+  #banner3 h3{
+    color: #aa1818;
+    font-weight: 800;
+    font-size: 15px;
+
+  }
+
+  /* Add your existing CSS styles here */
+
+
+
+  #newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("newsletter_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+    background-color: rgb(93, 93, 174);
+    height: 200px;
+  }
+
+  #newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-left: 25px;
+  }
+
+  #newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(12, 7, 7);
+    margin-left: 25px;
+   
+  }
+
+  #newsletter p span{
+    color: yellow;
+  }
+
+  #newsletter .form{
+    display: flex;
+   margin-right: 25px;
+  }
+
+  
+
+  #newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width : 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+   
+  }
+
+  #newsletter button{
+    background-color: lightseagreen;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+   
+  }
+
+
+  /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the footer section */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  color: rgb(129, 33, 129);
+}
+
+.footer-social ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social li {
+  margin-right: 10px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #0b0505;
+  font-size: 20px;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
+
+
+/*---------shop page----------*/
+
+#page-header{
+  background-image: url("banner_discount.jpeg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+
+}
+
+#page-header h2,
+#page-header p{
+  color: white;
+}
+
+#pagination{
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: rgb(24, 121, 96);
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: wheat;
+  font-weight: 600;
+}
+
+#pagination a{
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+/*---------- single product----------*/
+
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+} 
+
+#prodetails .single-pro-image{
+  width: 400px;
+  margin-right: 40px;
+  margin-left: 60px;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+
+}
+
+#prodetails .single-pro-details{
+  width: 50%;
+  padding-top: 30px;
+
+}
+
+#prodetails .single-pro-details h4{
+  padding: 40px 0 20px 0;
+
+}
+
+#prodetails .single-pro-details h2{
+ font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  
+
+}
+
+#prodetails .single-pro-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+
+}
+
+#prodetails .single-pro-details button{
+  background-color: cadetblue;
+
+}
+
+#prodetails .single-pro-details span{
+  line-height: 25px;
+}
+
+/*------------blog page-----------*/
+
+#page-header.blog-header {
+  background-image: url("banner_discount.jpeg");
+}
+
+#blog{
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img{
+  width: 50%;
+  margin-right: 40px;
+
+}
+
+#blog .img{
+  width: 50%;
+  height: 20px;
+  object-fit: cover;
+}
+
+#blog .blog-details{
+  width: 100%;
+  
+}
+
+#blog .blog-details a{
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blog .blog-details a::after{
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+} 
+
+#blog .blog-details a:hover{
+  color: rgb(95, 160, 99);
+}
+
+#blog .blog-details a:hover::after{
+  background-color: greenyellow;
+
+}
+
+#blog .blog-box h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgb(163, 51, 51);
+}
+
+/* -------------about page--------------*/
+
+
+#about-head{
+  display: contain;
+  align-items: center;
+}
+#about-head img{
+  width: 100%;
+  height: 60px;
+}
+
+#about-head div{
+
+
+}
